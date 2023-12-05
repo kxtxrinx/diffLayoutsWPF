@@ -1,0 +1,36 @@
+﻿<Window x:Class="EntregaGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntregaGrid"
+        mc:Ignorable="d"
+        Title="Layouts sample" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" Background="#FFCD9777">
+            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                
+                <Rectangle  VerticalAlignment="Stretch" Width="100" Fill="#FFEDC4B3"/>
+                <Rectangle  VerticalAlignment="Stretch" Width="100" Fill="#FFE6B8A2"/>
+                <Rectangle  VerticalAlignment="Stretch" Width="100" Fill="#FFDEAB90"/>
+                <Rectangle  VerticalAlignment="Stretch" Width="100" Fill="#FFD69F7E"/>
+                <Label Content="I don't care" FontSize="20" FontFamily="MV Boli" Foreground="#FFEDE5D2" Height="100"/>
+                <Label Content="about your skin color." FontSize="20" FontFamily="MV Boli" Foreground="#FFEDE5D2" Height="71"/>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Row ="1" VerticalScrollBarVisibility="Auto" Background="#FF774936">
+            <StackPanel Grid.Row="1">
+                <Rectangle  HorizontalAlignment="Stretch" Height="52" Fill="#FFC38E70" />
+                <Rectangle  HorizontalAlignment="Stretch" Height="52" Fill="#FFB07D62" />
+                <Rectangle  HorizontalAlignment="Stretch" Height="52" Fill="#FF8A5A44" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
